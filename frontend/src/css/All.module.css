@@ -1,0 +1,317 @@
+/* Root for all */
+/* https://www.youtube.com/watch?v=QwarZBtFoFA */
+/* https://www.youtube.com/watch?v=4bgL-4v3quk */
+
+/* ------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&family=Space+Grotesk:wght@300;400;500&display=swap');
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Space Grotesk', sans-serif; */
+
+
+:root{
+    --headerbackclr:#B6E5D8;
+    --headerfont:Roboto;
+    --headerbtnclr:#167D7F;
+    --linkhoverclr:#29A0B1;
+    --headerlinkclr:#0b69db;
+    --adminbkclr:#064ec2;
+
+    
+
+}
+
+.mainflex{
+    display: flex;
+  }
+
+*{
+    border: none;
+    margin: 0;
+}
+
+
+
+/* Home Header Section */
+.headerContainer{
+    display:flex;
+    background-color:var(--headerbackclr);
+    color:var(--headerfont);
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5rem;    
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: var(--headerfontclr);
+}
+
+.headerIcon{
+    width: 25px;
+    height: 25px;
+    padding-right: 2px;
+}
+.logoflex{
+    display: flex;
+    cursor: pointer;
+   
+}
+.headerSearchContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    
+    background-color: var(--headerbackclr);
+}
+.headerSearch{
+   height: 3rem;
+   width: 450px;
+   outline-color: #0b69db;
+   border: 2px solid #0b69db;
+   background-color: transparent;
+   margin-bottom: 5px;
+   border-radius: 12px;
+   transition: .3s;
+}
+.headerButton{
+    padding-left:2px;
+    height: 1.7rem;
+    outline: none;
+    background-color: var(--headerbtnclr);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.headerButton:hover{
+    border-radius: 5px;
+    background-color:transparent ;
+    border: 1px solid blue;
+    transition: .3s;
+}
+.headerLinks{
+    text-decoration: none;
+    position: relative;
+    color:var(--headerlinkclr)
+}
+.headerLinks:after{
+    content:"";
+    position: absolute;
+    background-color: rgb(0, 229, 255);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.headerLinks:hover{
+    color:var(--linkhoverclr);   
+}
+.headerLinks:hover:after{
+    width: 100%;
+}
+.FaSearch{
+   font-size: 25px;
+   color:blue;
+   cursor: pointer;
+   padding-left: 2px;
+}
+/* home header Section end */
+/* other header like registe login  start */
+
+/* other header ends */
+
+
+
+
+
+
+/* home side course section */
+.bodyCourseCountainer{
+    background-color:var(--headerbackclr);
+    height: 100vh;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imageCourse{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+/* end home section */
+
+/* home side quiz section */
+
+.bodyQuizContainer{
+    background-color:var(--headerbackclr);
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* end quiz section */
+
+/* home adv section */
+.advContaniner{
+    background-color: var(--headerbackclr);
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.advSpeaker{
+    width: 45px;
+    height: 50px;
+}
+/* end adv section */
+
+/* home footer section */
+.footerContainer{
+    background-color: var(--headerbackclr);
+    width: 100%;
+    height: 125px;
+}
+.footerhr{
+    border-bottom: solid 1px rgb(0, 47, 255);
+}
+.footerIconContainer{
+    padding-top: 10px;
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+.footerIcons{
+    width: 35px;
+    height: 35px;
+
+}
+.footerCopy{
+    text-align: center;
+    margin-top: 25px;
+}
+/* end footer section */
+
+
+.profile{
+    cursor: pointer;
+}
+
+/* Learner Register Page */
+.learnerDev{
+    color:blue
+}
+.leanerResigterContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--linkhoverclr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.form{
+    
+    width: 350px;
+    height: 550px;
+    background-color: var(--headerbackclr);
+    border-radius: 10px;
+    box-shadow: 10px -10px var(--headerbtnclr);
+    
+    
+}
+.learnerInputField{
+   background-color:transparent;
+   width: 90%;
+   height: 35px;
+   margin-left: 15px;
+   margin-top: 15px;
+   border-radius: 20px;
+}
+.learnerInputField::placeholder{
+    color: #0b69db;
+}
+
+.learnerRister{
+    text-align: center;
+    padding: 10px;
+}
+.registeBtn{
+    background-color:transparent;
+   width: 90%;
+   height: 35px;
+   margin-left: 15px;
+   margin-top: 15px;
+   border-radius: 20px;
+    border: 2px solid var(--headerlinkclr);
+    cursor: pointer;
+   transition: .3s;
+}
+.registeBtn:hover{
+    border: none;
+    background-color: var(--headerlinkclr);
+    transition: .3s;
+}
+.loginForget{
+    padding-top: 25px;
+    text-align: center;
+}
+
+/* admin section */
+/* admin course  */
+.adminCourseContaier{
+    background-color: var(--headerbackclr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.adminCourseFromConainer{
+   padding: 25px;
+   width: 90%;
+}
+.adminViewContainer{
+    background-color: var(--headerbackclr);
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.adminviewdet{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.adminBtn{
+    width: 50%;
+    height: 35px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid var(--headerlinkclr);
+    cursor: pointer;
+    margin-top: 15px;
+    transition: .3s;
+}
+.adminBtn:hover{
+border: none;
+background-color: var(--headerlinkclr);
+transition: .3s;
+}
+
+/* Header course Display  */
+.courseDisplayCon{
+    width: 100%;
+}
+.courseDisplayCon p{
+    color: #064ec2;
+}
